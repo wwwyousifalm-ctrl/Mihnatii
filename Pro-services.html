@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم الخدمات المهنية - تطبيق مهنتي</title>
+    <style>
+        /* --- التصميم الأساسي والثبات التام للمربعات --- */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: #f8fafc;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        header h1 { 
+            font-size: 20px; 
+            color: #38bdf8; 
+        }
+
+        nav a { 
+            color: #94a3b8; 
+            text-decoration: none; 
+            margin-left: 15px; 
+            font-weight: 600; 
+        }
+
+        nav a:hover { 
+            color: #fff; 
+        }
+
+        .main-content h2 { 
+            font-size: 22px; 
+            margin-bottom: 20px; 
+            color: #f1f5f9; 
+        }
+        
+        /* --- تخطيط البطاقات بدون أي حركة أو اهتزاز --- */
+        .cards-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            display: block;
+            transform: none !important;
+            transition: none !important;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 14px;
+            /* منع الحركة والاهتزاز نهائياً */
+            transform: none !important;
+            transition: none !important;
+        }
+
+        .card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: none !important;
+        }
+
+        .card h3 { 
+            color: #38bdf8; 
+            margin-bottom: 8px; 
+            font-size: 17px; 
+        }
+
+        .card p { 
+            color: #94a3b8; 
+            font-size: 13px; 
+            line-height: 1.5; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>تطبيق مهنتي</h1>
+        <nav>
+            <a href="services.html">الخدمات</a>
+            <a href="index.html">خروج</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>🛠️ تقديم الخدمات المهنية</h2>
+        
+        <div class="cards-grid">
+            <a href="my-skills.html" class="card-link">
+                <div class="card">
+                    <h3>عرض مهاراتك المستقلة</h3>
+                    <p>سجل مهاراتك في البرمجة، التصميم، أو الترجمة لتكون متاحة أمام أصحاب المشاريع والشركات.</p>
+                </div>
+            </a>
+
+            <a href="manage-projects.html" class="card-link">
+                <div class="card">
+                    <h3>إدارة مشاريعك</h3>
+                    <p>تابع طلبات العملاء، ونظم مواعيد تسليم الأعمال بكل سهولة واحترافية.</p>
+                </div>
+            </a>
+
+            <a href="pricing.html" class="card-link">
+                <div class="card">
+                    <h3>تحديد الأجور والأسعار</h3>
+                    <p>ضع خطة الأسعار الخاصة بخدماتك بناءً على جودة ونطاق العمل المقدم.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن التطبيق - تطبيق مهنتي</title>
+    <style>
+        /* --- إعدادات عامة وتثبيت الاتجاه من اليمين لليسار --- */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: #f8fafc;
+            min-height: 100vh;
+            padding: 20px;
+            direction: rtl; /* تثبيت الاتجاه من اليمين لليسار */
+            text-align: right; /* تثبيت محاذاة النص لليمين دائماً */
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        header h1 { 
+            font-size: 20px; 
+            color: #38bdf8; 
+        }
+
+        nav a { 
+            color: #94a3b8; 
+            text-decoration: none; 
+            margin-left: 15px; 
+            font-weight: 600; 
+        }
+
+        nav a:hover { 
+            color: #fff; 
+        }
+
+        .main-content h2 { 
+            font-size: 22px; 
+            margin-bottom: 20px; 
+            color: #f1f5f9; 
+        }
+        
+        /* --- تثبيت المربع وجعله مستقراً تماماً بدون أي حركة --- */
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 14px;
+            direction: rtl;
+            text-align: right;
+            /* إلغاء أي حركة أو اهتزاز نهائياً */
+            transform: none !important;
+            transition: none !important;
+        }
+
+        .card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: none !important;
+        }
+
+        .card p { 
+            color: #94a3b8; 
+            font-size: 14px; 
+            line-height: 1.8; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>تطبيق مهنتي</h1>
+        <nav>
+            <a href="services.html">الخدمات</a>
+            <a href="about.html">عن التطبيق</a>
+            <a href="contact.html">تواصل معنا</a>
+            <a href="index.html">خروج</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>عن تطبيق مهنتي</h2>
+        
+        <div class="card">
+            <p>
+                تطبيق مهنتي هو منصة طموحة تسعى لربط الكفاءات والمهنيين بأفضل فرص العمل في السوق.<br>
+                نعمل على توفير بيئة تفاعلية وسهلة الاستخدام تساعد الباحثين عن العمل على إبراز طاقاتهم، وتتيح للمؤسسات الوصول للكوادر المناسبة بكل سهولة.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
